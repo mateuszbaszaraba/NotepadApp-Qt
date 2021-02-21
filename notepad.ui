@@ -48,6 +48,7 @@
     <addaction name="actionSave"/>
     <addaction name="actionSave_as"/>
     <addaction name="actionPrint"/>
+    <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -77,15 +78,20 @@
    <addaction name="actionLoad"/>
    <addaction name="actionSave"/>
    <addaction name="actionSave_as"/>
+   <addaction name="actionPrint"/>
    <addaction name="separator"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionPaste"/>
    <addaction name="actionUndo"/>
    <addaction name="actionRedo"/>
-   <addaction name="actionPrint"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
   </widget>
   <action name="actionNew">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/new.png</normaloff>:/imgs/new.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/new.png</normaloff>:/items/new.png</iconset>
    </property>
    <property name="text">
     <string>New</string>
@@ -93,8 +99,8 @@
   </action>
   <action name="actionLoad">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/open.png</normaloff>:/imgs/open.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/open.png</normaloff>:/items/open.png</iconset>
    </property>
    <property name="text">
     <string>Load</string>
@@ -102,8 +108,9 @@
   </action>
   <action name="actionSave_as">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/save_as.png</normaloff>:/imgs/save_as.png</iconset>
+    <iconset>
+     <normaloff>:/imgs/save_as.png</normaloff>
+     <normalon>:/items/save_as.png</normalon>:/imgs/save_as.png</iconset>
    </property>
    <property name="text">
     <string>Save as</string>
@@ -111,8 +118,9 @@
   </action>
   <action name="actionPrint">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/print.png</normaloff>:/imgs/print.png</iconset>
+    <iconset>
+     <normaloff>:/imgs/print.png</normaloff>
+     <normalon>:/items/print.png</normalon>:/imgs/print.png</iconset>
    </property>
    <property name="text">
     <string>Print</string>
@@ -120,8 +128,8 @@
   </action>
   <action name="actionSave">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/save.png</normaloff>:/imgs/save.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/save.png</normaloff>:/items/save.png</iconset>
    </property>
    <property name="text">
     <string>Save</string>
@@ -129,8 +137,8 @@
   </action>
   <action name="actionUndo">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/edit_undo.png</normaloff>:/imgs/edit_undo.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/edit_undo.png</normaloff>:/items/edit_undo.png</iconset>
    </property>
    <property name="text">
     <string>Undo</string>
@@ -138,8 +146,8 @@
   </action>
   <action name="actionRedo">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/edit_redo.png</normaloff>:/imgs/edit_redo.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/edit_redo.png</normaloff>:/items/edit_redo.png</iconset>
    </property>
    <property name="text">
     <string>Redo</string>
@@ -147,8 +155,8 @@
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/copy.png</normaloff>:/imgs/copy.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/copy.png</normaloff>:/items/copy.png</iconset>
    </property>
    <property name="text">
     <string>Copy</string>
@@ -156,8 +164,8 @@
   </action>
   <action name="actionPaste">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/paste.png</normaloff>:/imgs/paste.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/paste.png</normaloff>:/items/paste.png</iconset>
    </property>
    <property name="text">
     <string>Paste</string>
@@ -168,14 +176,25 @@
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset resource="../Notepadd/Resources.qrc">
-     <normaloff>:/imgs/cut.png</normaloff>:/imgs/cut.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/cut.png</normaloff>:/items/cut.png</iconset>
    </property>
    <property name="text">
     <string>Cut</string>
    </property>
   </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/items/exit.png</normaloff>:/items/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
