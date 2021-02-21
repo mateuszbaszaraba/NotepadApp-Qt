@@ -3,6 +3,13 @@
 
 #include <QMainWindow>
 
+#include <QFile>
+#include <QFileDialog>
+#include <QTextStream>
+#include <QMessageBox>
+#include <QtPrintSupport/QPrinter>
+#include <QtPrintSupport/QPrintDialog>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Notepad; }
 QT_END_NAMESPACE
@@ -17,5 +24,6 @@ public:
 
 private:
     Ui::Notepad *ui;
+    QString currentFile;
 };
 #endif // NOTEPAD_H
